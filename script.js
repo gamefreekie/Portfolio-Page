@@ -54,8 +54,8 @@ const projectData = {
         images: [
             'images/vrHospital.png',
             'images/vrHospital2.png',
-            'images/vrHospital3.png',
-            'images/vrHospital4.png',
+            'images/VrHospital3.png',
+            'images/VrHospital4.png',
             'images/model1.png',
             'images/model2.png',
             'images/model3.png'
