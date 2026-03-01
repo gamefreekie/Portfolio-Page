@@ -95,7 +95,13 @@ const projectData = {
             'images/scifi/Scifi- Drone.png',
             'images/scifi/drone close.jpeg',
             'images/scifi/sci-fi drone wire close.jpg',
-            'images/scifi/Scifi- DroneWire.jpg'
+            'images/scifi/Scifi- DroneWire.jpg',
+            'images/HardSurfaces/strawHat.jpg',
+            'images/HardSurfaces/strawHatColor.jpg',
+            'images/HardSurfaces/strawHatColorClose.jpg',
+            'images/HardSurfaces/strawHatWire.jpg',
+            'images/HardSurfaces/strawHatWireL.jpg'
+
         ]
     },
     'character-showcase': {
