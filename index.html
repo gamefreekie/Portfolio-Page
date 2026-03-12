@@ -18,6 +18,9 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Montserrat:wght@700;900&display=swap"
         rel="stylesheet">
 
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -144,6 +147,9 @@
             </div>
         </section>
 
+
+
+
         <!-- Experience & Projects Section -->
         <section id="experience" class="experience-section">
             <div class="container section-padding">
@@ -193,7 +199,7 @@
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="skills-section">
+        <section id="skills" class="skills-section bento-section">
             <div class="container section-padding">
                 <div class="section-header">
                     <h2>Technical Skills & Competencies</h2>
@@ -203,13 +209,24 @@
                 <div class="skills-category reveal">
                     <h3 class="skill-cat-title">Game Engines</h3>
                     <div class="skills-grid">
-                        <div class="skill-card">
-                            <h3>Unreal Engine</h3>
-                            <p>Level Design, Blueprint Basics, Lighting, Material Setup</p>
+                        <div class="magic-bento-card magic-bento-card--border-glow particle-container"
+                            style="--glow-color: 0, 238, 255;">
+                            <div class="magic-bento-card__content">
+                                <img src="images/Svg/unreal-engine-svgrepo-com.svg" alt="Unreal Engine Icon"
+                                    style="width: 80px; height: 80px; margin: 0 0 16px 0 !important; filter: drop-shadow(0 0 10px rgba(0, 238, 255, 0.4)); object-fit: contain; align-self: flex-start;">
+                                <h2 class="magic-bento-card__title">Unreal Engine</h2>
+                                <p class="magic-bento-card__description">Level Design, Blueprint Basics, Lighting,
+                                    Material Setup</p>
+                            </div>
                         </div>
-                        <div class="skill-card">
-                            <h3>Unity 3D</h3>
-                            <p>Level Design, Scene Assembly</p>
+                        <div class="magic-bento-card magic-bento-card--border-glow particle-container"
+                            style="--glow-color: 0, 238, 255;">
+                            <div class="magic-bento-card__content">
+                                <img src="images/Svg/unity-svgrepo-com.svg" alt="Unity 3D Icon"
+                                    style="width: 80px; height: 80px; margin: 0 0 16px 0 !important; filter: drop-shadow(0 0 10px rgba(0, 238, 255, 0.4)); object-fit: contain; align-self: flex-start;">
+                                <h2 class="magic-bento-card__title">Unity 3D</h2>
+                                <p class="magic-bento-card__description">Level Design, Scene Assembly</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -217,17 +234,34 @@
                 <div class="skills-category reveal" style="margin-top: 40px;">
                     <h3 class="skill-cat-title">3D Modeling & Animation</h3>
                     <div class="skills-grid">
-                        <div class="skill-card">
-                            <h3>Autodesk Maya</h3>
-                            <p>Modeling, UV Mapping, Basic Animation, Rendering</p>
+                        <div class="magic-bento-card magic-bento-card--border-glow particle-container"
+                            style="--glow-color: 0, 238, 255;">
+                            <div class="magic-bento-card__content">
+                                <img src="images/Svg/maya-svgrepo-com.svg" alt="Autodesk Maya Icon"
+                                    style="width: 80px; height: 80px; margin: 0 0 16px 0 !important; filter: drop-shadow(0 0 10px rgba(0, 238, 255, 0.4)); object-fit: contain; align-self: flex-start;">
+                                <h2 class="magic-bento-card__title">Autodesk Maya</h2>
+                                <p class="magic-bento-card__description">Modeling, UV Mapping, Basic Animation,
+                                    Rendering</p>
+                            </div>
                         </div>
-                        <div class="skill-card">
-                            <h3>Autodesk 3ds Max</h3>
-                            <p>Environment Modeling, Modular Assets</p>
+                        <div class="magic-bento-card magic-bento-card--border-glow particle-container"
+                            style="--glow-color: 0, 238, 255;">
+                            <div class="magic-bento-card__content">
+                                <img src="images/Svg/autodesk-3ds-max-icon.svg" alt="Autodesk 3ds Max Icon"
+                                    style="width: 80px; height: 80px; margin: 0 0 16px 0 !important; filter: drop-shadow(0 0 10px rgba(0, 238, 255, 0.4)); object-fit: contain; align-self: flex-start;">
+                                <h2 class="magic-bento-card__title">Autodesk 3ds Max</h2>
+                                <p class="magic-bento-card__description">Environment Modeling, Modular Assets</p>
+                            </div>
                         </div>
-                        <div class="skill-card">
-                            <h3>ZBrush</h3>
-                            <p>Hard surface sculpting, Prop Detailing, Retopology Basics</p>
+                        <div class="magic-bento-card magic-bento-card--border-glow particle-container"
+                            style="--glow-color: 0, 238, 255;">
+                            <div class="magic-bento-card__content">
+                                <img src="images/Svg/zbrush-svgrepo-com.svg" alt="ZBrush Icon"
+                                    style="width: 80px; height: 80px; margin: 0 0 16px 0 !important; filter: drop-shadow(0 0 10px rgba(0, 238, 255, 0.4)); object-fit: contain; align-self: flex-start;">
+                                <h2 class="magic-bento-card__title">ZBrush</h2>
+                                <p class="magic-bento-card__description">Hard surface sculpting, Prop Detailing,
+                                    Retopology Basics</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -235,13 +269,26 @@
                 <div class="skills-category reveal" style="margin-top: 40px;">
                     <h3 class="skill-cat-title">Texturing & Cloth Simulation</h3>
                     <div class="skills-grid">
-                        <div class="skill-card">
-                            <h3>Substance 3D Painter</h3>
-                            <p>PBR Texturing, Material Creation, Texture Baking</p>
+                        <div class="magic-bento-card magic-bento-card--border-glow particle-container"
+                            style="--glow-color: 0, 238, 255;">
+                            <div class="magic-bento-card__content">
+                                <img src="images/Svg/adobe-substance-3d-painter-icon.svg"
+                                    alt="Substance 3D Painter Icon"
+                                    style="width: 80px; height: 80px; margin: 0 0 16px 0 !important; filter: drop-shadow(0 0 10px rgba(0, 238, 255, 0.4)); object-fit: contain; align-self: flex-start;">
+                                <h2 class="magic-bento-card__title">Substance 3D Painter</h2>
+                                <p class="magic-bento-card__description">PBR Texturing, Material Creation, Texture
+                                    Baking</p>
+                            </div>
                         </div>
-                        <div class="skill-card">
-                            <h3>Marvelous Designer</h3>
-                            <p>Garment Creation, Cloth Simulation, Game Engine Export</p>
+                        <div class="magic-bento-card magic-bento-card--border-glow particle-container"
+                            style="--glow-color: 0, 238, 255;">
+                            <div class="magic-bento-card__content">
+                                <img src="images/Svg/marvlous design.png" alt="Marvelous Designer Icon"
+                                    style="width: 80px; height: 80px; margin: 0 0 16px 0 !important; filter: drop-shadow(0 0 10px rgba(0, 238, 255, 0.4)); object-fit: contain; align-self: flex-start;">
+                                <h2 class="magic-bento-card__title">Marvelous Designer</h2>
+                                <p class="magic-bento-card__description">Garment Creation, Cloth Simulation, Game Engine
+                                    Export</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -249,13 +296,23 @@
                 <div class="skills-category reveal" style="margin-top: 40px;">
                     <h3 class="skill-cat-title">Adobe Creative Suite</h3>
                     <div class="skills-grid">
-                        <div class="skill-card">
-                            <h3>Adobe Photoshop</h3>
-                            <p>Texture Editing, UI Elements</p>
+                        <div class="magic-bento-card magic-bento-card--border-glow particle-container"
+                            style="--glow-color: 0, 238, 255;">
+                            <div class="magic-bento-card__content">
+                                <img src="images/Svg/adobe-photoshop-svgrepo-com.svg" alt="Adobe Photoshop Icon"
+                                    style="width: 80px; height: 80px; margin: 0 0 16px 0 !important; filter: drop-shadow(0 0 10px rgba(0, 238, 255, 0.4)); object-fit: contain; align-self: flex-start;">
+                                <h2 class="magic-bento-card__title">Adobe Photoshop</h2>
+                                <p class="magic-bento-card__description">Texture Editing, UI Elements</p>
+                            </div>
                         </div>
-                        <div class="skill-card">
-                            <h3>Adobe Illustrator</h3>
-                            <p>Concept Support, Graphic Assets</p>
+                        <div class="magic-bento-card magic-bento-card--border-glow particle-container"
+                            style="--glow-color: 0, 238, 255;">
+                            <div class="magic-bento-card__content">
+                                <img src="images/Svg/adobe-illustrator-svgrepo-com.svg" alt="Adobe Illustrator Icon"
+                                    style="width: 80px; height: 80px; margin: 0 0 16px 0 !important; filter: drop-shadow(0 0 10px rgba(0, 238, 255, 0.4)); object-fit: contain; align-self: flex-start;">
+                                <h2 class="magic-bento-card__title">Adobe Illustrator</h2>
+                                <p class="magic-bento-card__description">Concept Support, Graphic Assets</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -276,6 +333,8 @@
                 </div>
             </div>
         </section>
+
+
 
         <!-- Portfolio Section -->
         <section id="portfolio" class="portfolio-section">
@@ -354,6 +413,56 @@
                         </div>
                         <div class="emission-border"></div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Logo Loop Section -->
+        <section class="logo-loop-section section-padding">
+            <div class="logoloop logoloop--horizontal logoloop--fade">
+                <div class="logoloop__track">
+                    <!-- List 1 -->
+                    <ul class="logoloop__list">
+                        <li class="logoloop__item"><img src="images/Svg/unreal-engine-svgrepo-com.svg"
+                                alt="Unreal Engine"></li>
+                        <li class="logoloop__item"><img src="images/Svg/unity-svgrepo-com.svg" alt="Unity 3D"></li>
+                        <li class="logoloop__item"><img src="images/Svg/maya-svgrepo-com.svg" alt="Maya"></li>
+                        <li class="logoloop__item"><img src="images/Svg/autodesk-3ds-max-icon.svg" alt="3DS Max"></li>
+                        <li class="logoloop__item"><img src="images/Svg/zbrush-svgrepo-com.svg" alt="ZBrush"></li>
+                        <li class="logoloop__item"><img src="images/Svg/adobe-substance-3d-painter-icon.svg"
+                                alt="Substance 3D"></li>
+                        <li class="logoloop__item"><img src="images/Svg/marvlous design.png" alt="Marvelous Designer">
+                        </li>
+                    </ul>
+                    <!-- List 2 -->
+                    <ul class="logoloop__list" aria-hidden="true">
+                        <li class="logoloop__item"><img src="images/Svg/unreal-engine-svgrepo-com.svg"
+                                alt="Unreal Engine"></li>
+                        <li class="logoloop__item"><img src="images/Svg/unity-svgrepo-com.svg" alt="Unity 3D"></li>
+                        <li class="logoloop__item"><img src="images/Svg/maya-svgrepo-com.svg" alt="Maya"></li>
+                        <li class="logoloop__item"><img src="images/Svg/autodesk-3ds-max-icon.svg" alt="3DS Max"></li>
+                        <li class="logoloop__item"><img src="images/Svg/zbrush-svgrepo-com.svg" alt="ZBrush"></li>
+                        <li class="logoloop__item"><img src="images/Svg/adobe-substance-3d-painter-icon.svg"
+                                alt="Substance 3D"></li>
+                        <li class="logoloop__item"><img src="images/Svg/marvlous design.png" alt="Marvelous Designer">
+                        </li>
+                    </ul>
+                    <!-- List 3 -->
+                    <ul class="logoloop__list" aria-hidden="true">
+                        <li class="logoloop__item"><img src="images/Svg/unreal-engine-svgrepo-com.svg"
+                                alt="Unreal Engine"></li>
+                        <li class="logoloop__item"><img src="images/Svg/unity-svgrepo-com.svg" alt="Unity 3D"></li>
+                        <li class="logoloop__item"><img src="images/Svg/maya-svgrepo-com.svg" alt="Maya"></li>
+                        <li class="logoloop__item"><img src="images/Svg/autodesk-3ds-max-icon.svg" alt="3DS Max"></li>
+                        <li class="logoloop__item"><img src="images/Svg/zbrush-svgrepo-com.svg" alt="ZBrush"></li>
+                        <li class="logoloop__item"><img src="images/Svg/adobe-substance-3d-painter-icon.svg"
+                                alt="Substance 3D"></li>
+                        <li class="logoloop__item"><img src="images/Svg/marvlous design.png" alt="Marvelous Designer">
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
