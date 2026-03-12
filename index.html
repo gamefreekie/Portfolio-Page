@@ -21,6 +21,14 @@
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
+
+
+    <!-- Model Viewer & Editor -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer-space/0.4.0/model-viewer-space.min.js"></script>
+
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -335,6 +343,83 @@
         </section>
 
 
+
+        <!-- Interactive 3D Viewer Section -->
+        <section id="interactive-viewer" class="viewer-section section-padding">
+            <div class="container collapse-padding">
+                <div class="section-header">
+                    <h2>Interactive 3D Viewer</h2>
+                    <div class="header-line"></div>
+                </div>
+
+
+                <div class="viewer-container reveal" style="position: relative;">
+                    <model-viewer id="main-viewer" src="3d_Model/board.glb" alt="3D board Model" auto-rotate
+                        camera-controls shadow-intensity="1.5" environment-image="legacy" exposure="1"
+                        interaction-prompt="hover" class="model-preview"
+                        style="width: 100%; height: 600px; background: radial-gradient(circle at center, #2a2a2f 0%, #111111 100%); border-radius: 20px; border: 1px solid rgba(0, 238, 255, 0.2); box-shadow: 0 10px 40px rgba(0,0,0,0.5), inset 0 0 40px rgba(0,0,0,0.5);">
+
+                        <!-- Embedded Model Viewer space (Editor UI) -->
+                        <div id="controls" class="viewer-controls"
+                            style="position: absolute; top: 10px; right: 10px; z-index: 100; background: rgba(0,0,0,0.8); border: 1px solid var(--accent-cyan); padding: 15px; border-radius: 12px; color: white;">
+                            <h4 style="margin: 0 0 10px 0; color: var(--accent-cyan);">Editor Controls</h4>
+                            <label style="display: block; font-size: 0.85rem; margin-bottom: 5px;">Exposure: <span
+                                    id="exp-val">1.0</span></label>
+                            <input type="range" id="exposure" min="0" max="2" step="0.1" value="1"
+                                style="width: 100%; margin-bottom: 15px;">
+
+                            <label style="display: block; font-size: 0.85rem; margin-bottom: 5px;">Shadow Intensity:
+                                <span id="sha-val">1.5</span></label>
+                            <input type="range" id="shadow-intensity" min="0" max="2" step="0.1" value="1.5"
+                                style="width: 100%; margin-bottom: 15px;">
+
+                            <label style="display: block; font-size: 0.85rem; margin-bottom: 5px;">Environment</label>
+                            <select id="environment"
+                                style="width: 100%; background: #222; color: white; border: 1px solid var(--border-color); padding: 5px; border-radius: 4px;">
+                                <option value="legacy">Default (Studio)</option>
+                                <option value="neutral">Neutral</option>
+                                <option value="whipple_creek_regional_park_04_1k.hdr">Forest</option>
+                                <option value="aircraft_workshop_01_1k.hdr">Workshop</option>
+                                <option value="spruit_sunrise_1k_HDR.hdr">Sunrise</option>
+                            </select>
+
+                            <button id="get-code"
+                                style="margin-top: 15px; width: 100%; background: var(--accent-cyan); color: black; border: none; padding: 8px; border-radius: 4px; font-weight: bold; cursor: pointer;">Print
+                                Settings to Console</button>
+                        </div>
+                    </model-viewer>
+
+                    <script>
+                        const viewer = document.querySelector('#main-viewer');
+
+                        document.querySelector('#exposure').addEventListener('input', (e) => {
+                            viewer.exposure = e.target.value;
+                            document.querySelector('#exp-val').innerText = e.target.value;
+                        });
+
+                        document.querySelector('#shadow-intensity').addEventListener('input', (e) => {
+                            viewer.shadowIntensity = e.target.value;
+                            document.querySelector('#sha-val').innerText = e.target.value;
+                        });
+
+                        document.querySelector('#environment').addEventListener('change', (e) => {
+                            if (e.target.value === 'legacy' || e.target.value === 'neutral') {
+                                viewer.environmentImage = e.target.value;
+                            } else {
+                                viewer.environmentImage = 'https://modelviewer.dev/shared-assets/environments/' + e.target.value;
+                            }
+                        });
+
+                        document.querySelector('#get-code').addEventListener('click', () => {
+                            const config = `<model-viewer src="${viewer.src}" exposure="${viewer.exposure}" shadow-intensity="${viewer.shadowIntensity}" environment-image="${viewer.environmentImage}"></model-viewer>`;
+                            console.log("Current Settings:", config);
+                            alert("Settings printed to Developer Console (F12)!");
+                        });
+                    </script>
+
+
+                </div>
+        </section>
 
         <!-- Portfolio Section -->
         <section id="portfolio" class="portfolio-section">
