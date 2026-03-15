@@ -20,7 +20,7 @@ const InteractiveViewer = () => {
   };
 
   const printCode = () => {
-    const config = `<model-viewer src="/3d_Model/Drone.glb" exposure="${exposure}" shadow-intensity="${shadowIntensity}" environment-image="${environmentImage}" auto-rotate="${autoRotate}"></model-viewer>`;
+    const config = `<model-viewer src="/3d_Model/board.glb" exposure="${exposure}" shadow-intensity="${shadowIntensity}" environment-image="${environmentImage}" auto-rotate="${autoRotate}"></model-viewer>`;
     console.log("Current Settings:", config);
     alert("Settings printed to Developer Console (F12)!");
   };
@@ -91,8 +91,8 @@ const InteractiveViewer = () => {
           <model-viewer 
             ref={viewerRef}
             id="main-viewer" 
-            src="/3d_Model/Drone.glb" 
-            alt="3D Drone Model" 
+            src="/3d_Model/board.glb" 
+            alt="3D board Model" 
             auto-rotate={autoRotate ? "true" : undefined}
             camera-controls="true" 
             shadow-intensity={shadowIntensity} 

@@ -27,6 +27,5 @@ dist-ssr
 backup/
 vanilla_backup/
 
-# Large 3D model files (exceed GitHub 100MB limit)
-*.glb
-*.gltf
+# Large 3D model files that exceed GitHub 100MB limit
+public/3d_Model/Drone.glb
