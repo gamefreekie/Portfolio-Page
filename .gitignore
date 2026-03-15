@@ -26,3 +26,7 @@ dist-ssr
 # Backup folders
 backup/
 vanilla_backup/
+
+# Large 3D model files (exceed GitHub 100MB limit)
+*.glb
+*.gltf
