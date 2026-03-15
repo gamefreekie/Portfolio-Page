@@ -100,7 +100,11 @@ const projectData = {
             'images/HardSurfaces/strawHatColor.jpg',
             'images/HardSurfaces/strawHatColorClose.jpg',
             'images/HardSurfaces/strawHatWire.jpg',
-            'images/HardSurfaces/strawHatWireL.jpg'
+            'images/HardSurfaces/strawHatWireL.jpg',
+            'images/HardSurfaces/sketeboard3.jpg',
+            'images/HardSurfaces/sketeboard4.jpg',
+            'images/HardSurfaces/sketeboardwire.jpg',
+            'images/HardSurfaces/sketeboardwire2.jpg'
 
         ]
     },
@@ -195,7 +199,7 @@ document.addEventListener('keydown', (e) => {
 function createGradualBlur(position, height, zIndex = 1000) {
     const container = document.createElement('div');
     container.className = `gradual-blur gradual-blur-fixed gradual-blur-${position}`;
-    
+
     // Style container
     Object.assign(container.style, {
         position: 'fixed',
@@ -205,7 +209,7 @@ function createGradualBlur(position, height, zIndex = 1000) {
         pointerEvents: 'none',
         zIndex: zIndex,
     });
-    
+
     if (position === 'top') {
         container.style.top = '0';
     } else {
@@ -223,10 +227,10 @@ function createGradualBlur(position, height, zIndex = 1000) {
 
     for (let i = 1; i <= divCount; i++) {
         const progress = i / divCount;
-        
+
         // Non-exponential formula: blurValue = 0.0625 * (progress * divCount + 1) * strength
         const blurValue = 0.0625 * ((progress * divCount) + 1) * strength;
-        
+
         const p1 = Math.round((increment * i - increment) * 10) / 10;
         const p2 = Math.round(increment * i * 10) / 10;
         const p3 = Math.round((increment * i + increment) * 10) / 10;
@@ -246,24 +250,24 @@ function createGradualBlur(position, height, zIndex = 1000) {
             webkitBackdropFilter: `blur(${blurValue.toFixed(3)}rem)`,
             opacity: 1
         });
-        
+
         inner.appendChild(div);
     }
-    
+
     document.body.appendChild(container);
 }
 
 // Initialize Gradual Blurs on Load
 document.addEventListener('DOMContentLoaded', () => {
     // Add top blur behind navbar (zIndex 990 keeps it behind the navbar's 1000)
-    createGradualBlur('top', '8rem', 990); 
+    createGradualBlur('top', '8rem', 990);
     // Add bottom blur
     createGradualBlur('bottom', '8rem', 990);
 
     // --- Blur Visibility Logic ---
     const topBlur = document.querySelector('.gradual-blur-top');
     const bottomBlur = document.querySelector('.gradual-blur-bottom');
-    
+
     const handleBlurVisibility = () => {
         // Hide top blur if at the very top of the page
         if (window.scrollY <= 10) {
@@ -275,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hide bottom blur if at the very bottom of the page
         const scrollPosition = window.scrollY + window.innerHeight;
         const totalHeight = document.documentElement.scrollHeight;
-        
+
         // 10px buffer for mobile/sub-pixel rendering
         if (scrollPosition >= totalHeight - 10) {
             if (bottomBlur) bottomBlur.style.opacity = '0';
@@ -334,8 +338,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Check if mouse is hovering over any .bento-section
             const hoveredSection = Array.from(document.querySelectorAll('.bento-section')).find(section => {
                 const rect = section.getBoundingClientRect();
-                return e.clientX >= rect.left && e.clientX <= rect.right && 
-                       e.clientY >= rect.top && e.clientY <= rect.bottom;
+                return e.clientX >= rect.left && e.clientX <= rect.right &&
+                    e.clientY >= rect.top && e.clientY <= rect.bottom;
             });
 
             isInsideAnySection = !!hoveredSection;
@@ -423,9 +427,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const rect = card.getBoundingClientRect();
             // Generate and animate particles
-            for(let i=0; i<particleCount; i++) {
+            for (let i = 0; i < particleCount; i++) {
                 setTimeout(() => {
-                    if(!isHovered) return;
+                    if (!isHovered) return;
                     const p = createParticle(Math.random() * rect.width, Math.random() * rect.height);
                     card.appendChild(p);
                     particlesData.push(p);
@@ -486,11 +490,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;
-            const maxDist = Math.max( Math.hypot(x,y), Math.hypot(x-rect.width,y), Math.hypot(x,y-rect.height), Math.hypot(x-rect.width,y-rect.height) );
+            const maxDist = Math.max(Math.hypot(x, y), Math.hypot(x - rect.width, y), Math.hypot(x, y - rect.height), Math.hypot(x - rect.width, y - rect.height));
 
             const ripple = document.createElement('div');
             ripple.style.cssText = `
-                position: absolute; width: ${maxDist*2}px; height: ${maxDist*2}px; border-radius: 50%;
+                position: absolute; width: ${maxDist * 2}px; height: ${maxDist * 2}px; border-radius: 50%;
                 background: radial-gradient(circle, rgba(${glowColor}, 0.4) 0%, rgba(${glowColor}, 0.2) 30%, transparent 70%);
                 left: ${x - maxDist}px; top: ${y - maxDist}px; pointer-events: none; z-index: 1000;
             `;
