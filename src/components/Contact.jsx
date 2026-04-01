@@ -4,11 +4,6 @@ const Contact = () => {
   return (
     <section id="contact" className="contact-section">
       <div className="container section-padding">
-        <div className="status-banner reveal">
-          <div className="status-dot"></div>
-          <p>I am fully immersed in developing my skills through various projects. Therefore, I am
-            unavailable for freelance projects at the moment.</p>
-        </div>
 
         <div className="contact-card reveal">
           <h2>Get In Touch</h2>
