@@ -55,12 +55,12 @@ const projectData = {
           'https://drive.google.com/file/d/1EQnUb3_6hzG0AuIvfp384a_D_V99En3y/preview?usp=drive_link'// <-- Add the embed link here
         ],
         images: [
+          '/images/HardSurfaces/HighresScreenshot00000.png',
+          '/images/HardSurfaces/HighresScreenshot00001.png',
+          '/images/HardSurfaces/HighresScreenshot00002.png',
+          '/images/HardSurfaces/HighresScreenshot00003.png',
+          '/images/HardSurfaces/HighresScreenshot00004.png',
           '/images/scifi/Scifi- Drone.png',
-          'public/images/HardSurfaces/HighresScreenshot00000.png',
-          'public/images/HardSurfaces/HighresScreenshot00001.png',
-          'public/images/HardSurfaces/HighresScreenshot00002.png',
-          'public/images/HardSurfaces/HighresScreenshot00003.png',
-          'public/images/HardSurfaces/HighresScreenshot00004.png',
           '/images/scifi/drone close.jpeg',
           '/images/scifi/sci-fi drone wire close.jpg',
           '/images/scifi/Scifi- DroneWire.jpg'
