@@ -8,7 +8,6 @@ const LogoLoop = () => {
           {[1, 2, 3].map((listIdx) => (
             <ul className="logoloop__list" aria-hidden={listIdx !== 1 ? "true" : "false"} key={listIdx}>
               <li className="logoloop__item"><img src="/images/Svg/unreal-engine-svgrepo-com.svg" alt="Unreal Engine" /></li>
-              <li className="logoloop__item"><img src="/images/Svg/unity-svgrepo-com.svg" alt="Unity 3D" /></li>
               <li className="logoloop__item"><img src="/images/Svg/maya-svgrepo-com.svg" alt="Maya" /></li>
               <li className="logoloop__item"><img src="/images/Svg/autodesk-3ds-max-icon.svg" alt="3DS Max" /></li>
               <li className="logoloop__item"><img src="/images/Svg/zbrush-svgrepo-com.svg" alt="ZBrush" /></li>

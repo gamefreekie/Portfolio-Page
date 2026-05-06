@@ -239,13 +239,6 @@ const Skills = () => {
                 <p className="magic-bento-card__description">Level Design, Blueprint Basics, Lighting, Material Setup</p>
               </div>
             </div>
-            <div className="magic-bento-card magic-bento-card--border-glow particle-container" style={{ '--glow-color': '0, 238, 255' }}>
-              <div className="magic-bento-card__content">
-                <img src="/images/Svg/unity-svgrepo-com.svg" alt="Unity 3D Icon" style={{ width: '80px', height: '80px', margin: '0 0 16px 0 !important', filter: 'drop-shadow(0 0 10px rgba(0, 238, 255, 0.4))', objectFit: 'contain', alignSelf: 'flex-start' }} />
-                <h2 className="magic-bento-card__title">Unity 3D</h2>
-                <p className="magic-bento-card__description">Level Design, Scene Assembly</p>
-              </div>
-            </div>
           </div>
         </div>
 
