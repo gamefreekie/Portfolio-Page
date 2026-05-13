@@ -115,8 +115,8 @@ const projectData = {
       '/images/F1 enviroment/RaceTrack.0645.png',
       '/images/F1 enviroment/RaceTrack.0898.png',
       '/images/F1 enviroment/ShutterOut.0147.png',
-      'public/images/F1 enviroment/Screenshot (631).png',
-      'public/images/F1 enviroment/Screenshot (632).png'
+      '/images/F1 enviroment/Screenshot (631).png',
+      '/images/F1 enviroment/Screenshot (632).png'
     ]
   },
   'modular-environment': {
