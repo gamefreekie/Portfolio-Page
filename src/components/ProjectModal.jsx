@@ -14,7 +14,8 @@ const projectData = {
       '/images/VrHospital4.png',
       '/images/model1.png',
       '/images/model2.png',
-      '/images/model3.png'
+      '/images/model3.png',
+      '/images/eyes.jpg'
     ]
   },
   'modular-env': {
@@ -30,8 +31,8 @@ const projectData = {
       '/images/enviroment/Japanese eno4.jpg',
       '/images/enviroment/convo0538.png',
       '/images/enviroment/convo1060.png',
-      '/images/enviroment/convo1429.png',
-      '/images/eyes.jpg'
+      '/images/enviroment/convo1429.png'
+
     ]
   },
   'costume-design': {
