@@ -261,6 +261,13 @@ const Skills = () => {
             </div>
             <div className="magic-bento-card magic-bento-card--border-glow particle-container" style={{ '--glow-color': '0, 238, 255' }}>
               <div className="magic-bento-card__content">
+                <img src="/images/Svg/blender-svgrepo-com.svg" alt="Blender Icon" style={{ width: '80px', height: '80px', margin: '0 0 16px 0 !important', filter: 'drop-shadow(0 0 10px rgba(0, 238, 255, 0.4))', objectFit: 'contain', alignSelf: 'flex-start' }} />
+                <h2 className="magic-bento-card__title">Blender</h2>
+                <p className="magic-bento-card__description">3D Modeling, UV Unwrapping, Asset Creation</p>
+              </div>
+            </div>
+            <div className="magic-bento-card magic-bento-card--border-glow particle-container" style={{ '--glow-color': '0, 238, 255' }}>
+              <div className="magic-bento-card__content">
                 <img src="/images/Svg/zbrush-svgrepo-com.svg" alt="ZBrush Icon" style={{ width: '80px', height: '80px', margin: '0 0 16px 0 !important', filter: 'drop-shadow(0 0 10px rgba(0, 238, 255, 0.4))', objectFit: 'contain', alignSelf: 'flex-start' }} />
                 <h2 className="magic-bento-card__title">ZBrush</h2>
                 <p className="magic-bento-card__description">Hard surface sculpting, Prop Detailing, Retopology Basics</p>

@@ -1193,20 +1193,25 @@ footer {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .magic-bento-card:nth-child(3) {
+    .card-grid .magic-bento-card:nth-child(3) {
         grid-column: span 2;
         grid-row: span 2;
     }
 
-    .magic-bento-card:nth-child(4) {
+    .card-grid .magic-bento-card:nth-child(4) {
         grid-column: 1 / span 2;
         grid-row: 2 / span 2;
     }
 
-    .magic-bento-card:nth-child(6) {
+    .card-grid .magic-bento-card:nth-child(6) {
         grid-column: 4;
         grid-row: 3;
     }
+}
+
+.skills-grid .magic-bento-card {
+    grid-column: auto;
+    grid-row: auto;
 }
 
 /* Border glow effect */

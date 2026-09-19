@@ -10,6 +10,7 @@ const LogoLoop = () => {
               <li className="logoloop__item"><img src="/images/Svg/unreal-engine-svgrepo-com.svg" alt="Unreal Engine" /></li>
               <li className="logoloop__item"><img src="/images/Svg/maya-svgrepo-com.svg" alt="Maya" /></li>
               <li className="logoloop__item"><img src="/images/Svg/autodesk-3ds-max-icon.svg" alt="3DS Max" /></li>
+              <li className="logoloop__item"><img src="/images/Svg/blender-svgrepo-com.svg" alt="Blender" /></li>
               <li className="logoloop__item"><img src="/images/Svg/zbrush-svgrepo-com.svg" alt="ZBrush" /></li>
               <li className="logoloop__item"><img src="/images/Svg/adobe-substance-3d-painter-icon.svg" alt="Substance 3D" /></li>
               <li className="logoloop__item"><img src="/images/Svg/marvlous design.png" alt="Marvelous Designer" /></li>
