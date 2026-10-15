@@ -5,7 +5,7 @@ const projectData = {
     title: 'VR Human Anatomy Experience',
     desc: 'Unreal Engine real-time project. Modular 3D environment focusing on real-time lighting and optimized scene performance. Modular organ assets with clean topology using Maya/ZBrush, textured in Substance 3D Painter.',
     videos: [
-      'https://drive.google.com/file/d/156K970WqPBSidzC6cFI5gvoiEw_Cs-cN/preview?usp=sharing'// <-- Add the embed link here
+      'https://drive.google.com/file/d/1q1z4-Ie2kyIINMPm_zsOu0tMjnXFIazh/preview?usp=sharing'// <-- Add the embed link here
     ],
     images: [
       '/images/vrHospital.png',// <-- Add the image Path
@@ -105,7 +105,7 @@ const projectData = {
   'Enviroment Showcase': {
     title: 'Enviroment Showcase',
     videos: [
-      'https://drive.google.com/file/d/1doIMXI3QQPoBHQZABQ_E24h6G0TBFNND/preview?usp=sharing'// <-- Add the embed link here
+      'https://drive.google.com/file/d/1UC0pmP9Eg8mRL7fB8nbGCinRjFPSqq5I/preview?usp=sharing'// <-- Add the embed link here
     ],
     desc: 'Academic Project.environment assets created in Maya and 3ds Max. Textured with optimized PBR materials in Substance 3D Painter and assembled/lit inside Unreal Engine.',
     images: [
